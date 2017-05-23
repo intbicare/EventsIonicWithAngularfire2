@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      New Event
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <form (ngSubmit)="submitActivity()">
+    <ion-item>
+      <ion-label floating>Event</ion-label>
+      <ion-textarea row = "10"  name = "name" [(ngModel)] = "activities.name"></ion-textarea>
+    </ion-item>
+
+      <button ion-button type = "submit" block item-right>ADD</button>
+  </form>
+</ion-list>
+</ion-content>
